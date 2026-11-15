@@ -1,0 +1,177 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptForge AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">PROMPT<span>FORGE</span></div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#features">Features</a>
+      </nav>
+
+      <button
+        class="nav-button"
+        onclick="
+          document
+            .querySelector('#workspace')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Get Started
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="badge">✦ YOUR AI PROMPT ENGINEER</div>
+
+        <h1>
+          Turn simple ideas into
+          <span>powerful prompts.</span>
+        </h1>
+
+        <p>
+          Create better AI prompts in seconds. Improve your ideas with the power
+          of PromptForge.
+        </p>
+
+        <button
+          class="primary-button"
+          onclick="
+            document
+              .querySelector('#workspace')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Start Creating →
+        </button>
+
+        <div class="hero-stats">
+          <div>
+            <h2>AI</h2>
+            <p>Powered Intelligence</p>
+          </div>
+          <div>
+            <h2>∞</h2>
+            <p>Creative Possibilities</p>
+          </div>
+          <div>
+            <h2>1 Click</h2>
+            <p>Better Prompts</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace" id="workspace">
+        <div class="section-heading">
+          <span>YOUR WORKSPACE</span>
+          <h2>Build your perfect prompt.</h2>
+          <p>Describe your idea. Let AI improve it.</p>
+        </div>
+
+        <div class="editor">
+          <div class="editor-top">
+            <h3>✦ Prompt Editor</h3>
+            <span class="status">● AI READY</span>
+          </div>
+
+          <label for="promptInput">Your original prompt</label>
+
+          <textarea
+            id="promptInput"
+            placeholder="Example: Create a futuristic city with flying cars, neon lights and realistic buildings..."
+          ></textarea>
+
+          <div class="settings">
+            <div class="setting">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="General">General</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Image Generation">Image Generation</option>
+                <option value="Coding">Coding</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Business">Business</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Writing">Writing</option>
+              </select>
+            </div>
+
+            <div class="setting">
+              <label for="style">Writing Style</label>
+              <select id="style">
+                <option value="Professional">Professional</option>
+                <option value="Creative">Creative</option>
+                <option value="Detailed">Detailed</option>
+                <option value="Minimal">Minimal</option>
+                <option value="Technical">Technical</option>
+                <option value="Cinematic">Cinematic</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="improve-button" id="improveBtn">
+            ✦ Improve My Prompt
+          </button>
+
+          <div class="result-container" id="resultContainer" hidden>
+            <div class="result-heading">
+              <h3>✨ Improved Prompt</h3>
+              <button id="copyBtn">Copy</button>
+            </div>
+
+            <div id="resultText"></div>
+          </div>
+
+          <div class="error-message" id="errorMessage"></div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="section-heading">
+          <span>WHY PROMPTFORGE?</span>
+          <h2>Everything starts with a better prompt.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">✦</div>
+            <h3>AI Enhancement</h3>
+            <p>Transform basic ideas into detailed, structured AI prompts.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">◈</div>
+            <h3>Multiple Categories</h3>
+            <p>
+              Create prompts for coding, images, websites, business and more.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Results</h3>
+            <p>Improve your prompts with a single click.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo">PROMPT<span>FORGE</span></div>
+      <p>Build better prompts. Create bigger ideas.</p>
+      <p class="copyright">© 2026 PromptForge AI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
